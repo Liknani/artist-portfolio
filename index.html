@@ -1,424 +1,835 @@
-<!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ethereal by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моторина Елена - Художница</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        :root {
+            --primary-color: #f5f5f5;
+            --secondary-color: #e0e0e0;
+            --accent-color: #c8b6a6;
+            --text-color: #333;
+            --light-text: #666;
+            --transition: all 0.5s ease;
+        }
 
-				<!-- Wrapper -->
-					<div id="wrapper">
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-						<!-- Panel (Banner) -->
-							<section class="panel banner right">
-								<div class="content color0 span-3-75">
-									<h1 class="major">Hello, my name<br />
-									is Ethereal</h1>
-									<p>This is <strong>Ethereal</strong>, a free site template by AJ for <a href="https://html5up.net">HTML5 UP</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)</p>
-									<ul class="actions">
-										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
-									</ul>
-								</div>
-								<div class="image filtered span-1-75" data-position="25% 25%">
-									<img src="images/pic01.jpg" alt="" />
-								</div>
-							</section>
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1.5rem;
+        }
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
-								<div class="content span-7">
-									<h2 class="major">Sed etiam aenean</h2>
-									<p>Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.</p>
-								</div>
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-							</section>
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
 
-						<!-- Panel -->
-							<section class="panel color1">
-								<div class="intro joined">
-									<h2 class="major">Amet lorem</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="inner">
-									<ul class="grid-icons three connected">
-										<li><span class="icon fa-gem"><span class="label">Lorem</span></span></li>
-										<li><span class="icon solid fa-camera-retro"><span class="label">Ipsum</span></span></li>
-										<li><span class="icon solid fa-cog"><span class="label">Dolor</span></span></li>
-										<li><span class="icon solid fa-paper-plane"><span class="label">Sit</span></span></li>
-										<li><span class="icon solid fa-chart-bar"><span class="label">Amet</span></span></li>
-										<li><span class="icon solid fa-code"><span class="label">Nullam</span></span></li>
-									</ul>
-								</div>
-							</section>
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
 
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight large left">
-								<div class="content span-5">
-									<h2 class="major">Magna amet tempus</h2>
-									<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
-								</div>
-								<div class="image filtered tinted" data-position="top right">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-							</section>
+        a:hover {
+            color: var(--accent-color);
+        }
 
-						<!-- Panel -->
-							<section class="panel">
-								<div class="intro color2">
-									<h2 class="major">Elit integer</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="gallery">
-									<div class="group span-3">
-										<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-									<div class="group span-4-5">
-										<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-										<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-									</div>
-									<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-								</div>
-							</section>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-						<!-- Panel -->
-							<section class="panel color4-alt">
-								<div class="intro color4">
-									<h2 class="major">Contact</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-								</div>
-								<div class="inner columns divided">
-									<div class="span-3-25">
-										<form method="post" action="#">
-											<div class="fields">
-												<div class="field half">
-													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
-												</div>
-												<div class="field half">
-													<label for="email">Email</label>
-													<input type="email" name="email" id="email" />
-												</div>
-												<div class="field">
-													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button primary" /></li>
-											</ul>
-										</form>
-									</div>
-									<div class="span-1-5">
-										<ul class="contact-icons color1">
-											<li class="icon brands fa-twitter"><a href="#">@untitled-tld</a></li>
-											<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled</a></li>
-											<li class="icon brands fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-											<li class="icon brands fa-instagram"><a href="#">@untitled-tld</a></li>
-											<li class="icon brands fa-medium-m"><a href="#">medium.com/untitled</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
 
-						<!-- Panel -->
-							<section class="panel color2-alt">
-								<div class="intro color2">
-									<h2 class="major">Elements</h2>
-									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam. </p>
-								</div>
-								<div class="inner columns aligned">
-									<div class="span-2-75">
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-										<h3 class="major">Text</h3>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
 
-										<h1>Heading Level 1</h1>
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
 
-									</div>
-									<div class="span-3">
+        .nav-links li {
+            margin-left: 30px;
+        }
 
-										<h4>Blockquote</h4>
-										<blockquote>Lorem ipsum dolor sit amet. Felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in vestibulum. Blandit adipiscing eu iaculis volutpat ac adipiscing volutpat ac adipiscing faucibus.</blockquote>
+        .nav-links a {
+            font-weight: 600;
+            position: relative;
+        }
 
-										<h4>Preformatted</h4>
-										<pre><code>i = 0;
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + (i++);
-    deck.shuffle();
-}
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+        .language-toggle {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
 
-									</div>
-									<div class="span-1-25">
+        .language-toggle:hover {
+            background-color: var(--secondary-color);
+        }
 
-										<h3 class="major">Lists</h3>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-										<h4>Unordered</h4>
-										<ul>
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-										</ul>
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
 
-										<h4>Alternate</h4>
-										<ul class="alt">
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-											<li>Felis enim feugiat.</li>
-										</ul>
+        .hero-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-									</div>
-									<div class="span-1-5">
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.9;
+        }
 
-										<h4>Ordered</h4>
-										<ol>
-											<li>Lorem ipsum dolor sit.</li>
-											<li>Dolor pulvinar etiam.</li>
-											<li>Etiam vel felis viverra.</li>
-											<li>Felis enim feugiat.</li>
-											<li>Etiam vel felis lorem.</li>
-										</ol>
+        .hero-text {
+            max-width: 600px;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
 
-										<h4>Actions</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary color2">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-									</div>
-									<div class="span-1-25">
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
 
-										<h4>Icons</h4>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-										</ul>
+        .scroll-down {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: white;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 3;
+        }
 
-										<h4>Contact Icons</h4>
-										<ul class="contact-icons color2">
-											<li class="icon brands fa-twitter"><a href="#">Twitter</a></li>
-											<li class="icon brands fa-facebook-f"><a href="#">Facebook</a></li>
-											<li class="icon brands fa-instagram"><a href="#">Instagram</a></li>
-											<li class="icon brands fa-github"><a href="#">GitHub</a></li>
-											<li class="icon brands fa-medium-m"><a href="#">Medium</a></li>
-										</ul>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
 
-									</div>
-									<div class="span-3">
-										<h3 class="major">Table</h3>
-										<h4>Default</h4>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</div>
-									<div class="span-3">
-										<h4>Alternate</h4>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</div>
-									<div class="span-2-25">
-										<h3 class="major">Buttons</h3>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button large">Large</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2 icon solid fa-cog">Icon</a></li>
-											<li><a href="#" class="button icon fa-gem">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary color2 disabled">Disabled</span></li>
-											<li><span class="button disabled">Disabled</span></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary color2 circle icon solid fa-cog">Icon</a></li>
-											<li><a href="#" class="button circle icon fa-gem">Icon</a></li>
-										</ul>
-									</div>
-									<div class="span-4-5">
-										<h3 class="major">Form</h3>
-										<form method="post" action="#">
-											<div class="fields">
-												<div class="field third">
-													<label for="demo-name">Name</label>
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-												</div>
-												<div class="field third">
-													<label for="demo-email">Email</label>
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-												</div>
-												<div class="field third">
-													<label for="demo-category">Category</label>
-													<div class="select-wrapper">
-														<select name="demo-category" id="demo-category">
-															<option value="">-</option>
-															<option value="1">Manufacturing</option>
-															<option value="1">Shipping</option>
-															<option value="1">Administration</option>
-															<option value="1">Human Resources</option>
-														</select>
-													</div>
-												</div>
-												<div class="field quarter">
-													<input type="radio" id="demo-priority-low" name="demo-priority" class="color2" checked />
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="field quarter">
-													<input type="radio" id="demo-priority-high" name="demo-priority" class="color2" />
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="field quarter">
-													<input type="checkbox" id="demo-copy" name="demo-copy" class="color2" />
-													<label for="demo-copy">Email a copy</label>
-												</div>
-												<div class="field quarter">
-													<input type="checkbox" id="demo-human" name="demo-human" class="color2" checked />
-													<label for="demo-human">Not a robot</label>
-												</div>
-												<div class="field">
-													<label for="demo-message">Message</label>
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary color2" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</form>
-									</div>
-								</div>
-							</section>
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background-color: var(--secondary-color);
+        }
 
-						<!-- Copyright -->
-							<div class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
 
-					</div>
+        .section-title h2 {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 15px;
+        }
 
-			</div>
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
 
-	</body>
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--light-text);
+        }
+
+        /* Works Section */
+        .works {
+            padding: 100px 0;
+            background-color: var(--primary-color);
+        }
+
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .work-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .work-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .work-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .work-item:hover .work-image {
+            transform: scale(1.1);
+        }
+
+        .work-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .work-item:hover .work-overlay {
+            transform: translateY(0);
+        }
+
+        .work-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: auto;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--accent-color);
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 70vh;
+            object-fit: contain;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .modal-description {
+            color: white;
+            padding: 0 20px;
+        }
+
+        .modal-description h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        /* Contacts Section */
+        .contacts {
+            padding: 100px 0;
+            background-color: var(--secondary-color);
+        }
+
+        .contacts-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-text h4 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .footer-links li {
+            margin: 0 15px;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-content, .contacts-container {
+                flex-direction: column;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-text {
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .works-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .language-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-btn:hover {
+            background-color: #b5a095;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="language-btn" id="lang-toggle">EN</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo" data-lang-ru="Моторина Елена" data-lang-en="Elena Motorina">Моторина Елена</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-lang-ru="Обо мне" data-lang-en="About">Обо мне</a></li>
+                <li><a href="#works" data-lang-ru="Работы" data-lang-en="Works">Работы</a></li>
+                <li><a href="#contacts" data-lang-ru="Контакты" data-lang-en="Contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Elena Motorina" class="hero-image">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 data-lang-ru="Моторина Елена" data-lang-en="Elena Motorina">Моторина Елена</h1>
+                    <p data-lang-ru="Современная художница, создающая уникальные произведения искусства, которые вызывают эмоции и вдохновляют." data-lang-en="Contemporary creating unique works of art that evoke emotions and inspire.">Современная художница, создающая уникальные произведения искусства, которые вызывают эмоции и вдохновляют.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang-ru="Обо мне" data-lang-en="About">Обо мне</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Elena Motorina">
+                </div>
+                <div class="about-text">
+                    <p data-lang-ru="Меня зовут Елена Моторина, и я современная художница, чья страсть к искусству началась в раннем детстве. Мои работы отражают мое видение мира, сочетая традиционные техники с современными подходами. Мой стиль характеризуется вниманием к деталям, глубоким изучением света и тени, а также использованием богатой палитры цветов. Моя страсть к искусству началась в раннем детстве, когда я впервые взяла в руки кисть. С тех пор я постоянно развиваюсь и совершенствую свое мастерство, пробуя разные стили и техники. Мои работы отражают мои внутренние переживания, наблюдения и эмоции, которые я стремлюсь передать зрителю через красоту и гармонию форм и цветов." data-lang-en="My name is Elena Motorina, and I am a contemporary artist whose passion for art began in early childhood. My works reflect my vision of the world, combining traditional techniques with modern approaches. My style is characterized by attention to detail, deep study of light and shadow, and the use of a rich palette of colors. My passion for art began in early childhood when I first took a brush in my hands. Since then, I have been constantly developing and perfecting my skills, trying different styles and techniques. My works reflect my inner experiences, observations, and emotions that I strive to convey to the viewer through the beauty and harmony of forms and colors.">Меня зовут Елена Моторина, и я современная художница, чья страсть к искусству началась в раннем детстве. Мои работы отражают мое видение мира, сочетая традиционные техники с современными подходами. Мой стиль характеризуется вниманием к деталям, глубоким изучением света и тени, а также использованием богатой палитры цветов. Моя страсть к искусству началась в раннем детстве, когда я впервые взяла в руки кисть. С тех пор я постоянно развиваюсь и совершенствую свое мастерство, пробуя разные стили и техники. Мои работы отражают мои внутренние переживания, наблюдения и эмоции, которые я стремлюсь передать зрителю через красоту и гармонию форм и цветов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang-ru="Работы" data-lang-en="Works">Работы</h2>
+            </div>
+            <div class="works-grid">
+                <div class="work-item" data-title="Зимний сон" data-lang-en-title="Winter Sleep" data-description="Эта картина отражает уникальную красоту зимней природы. Я использовала акварель и гуашь, чтобы передать тонкие оттенки снега и ледяных узоров. Работа была создана в 2021 году." data-lang-en-description="This painting reflects the unique beauty of winter nature. I used watercolor and gouache to convey the subtle shades of snow and ice patterns. The work was created in 2021." data-image="images/work1.jpg">
+                    <img src="images/work1.jpg" alt="Зимний сон" class="work-image">
+                    <div class="work-overlay">
+                        <h3 class="work-title">Зимний сон</h3>
+                    </div>
+                </div>
+                <div class="work-item" data-title="Летний день" data-lang-en-title="Summer Day" data-description="Картина, вдохновленная теплыми летними днями. Я использовала масло для создания глубины и насыщенности цвета. Эта работа была представлена на международной выставке в Париже в 2022 году." data-lang-en-description="A painting inspired by warm summer days. I used oil to create depth and color richness. This work was presented at an international exhibition in Paris in 2022." data-image="images/work2.jpg">
+                    <img src="images/work2.jpg" alt="Летний день" class="work-image">
+                    <div class="work-overlay">
+                        <h3 class="work-title">Летний день</h3>
+                    </div>
+                </div>
+                <div class="work-item" data-title="Вечерний город" data-lang-en-title="Evening City" data-description="Современная городская сцена, созданная с помощью смешанной техники. Я объединила акрил, пастель и цифровые элементы, чтобы передать атмосферу ночного города. Работа была создана в 2023 году." data-lang-en-description="A modern urban scene created using mixed media. I combined acrylic, pastel, and digital elements to convey the atmosphere of a night city. The work was created in 2023." data-image="images/work3.jpg">
+                    <img src="images/work3.jpg" alt="Вечерний город" class="work-image">
+                    <div class="work-overlay">
+                        <h3 class="work-title">Вечерний город</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="work-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" class="modal-image" id="modal-img">
+            <div class="modal-description">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang-ru="Контакты" data-lang-en="Contacts">Контакты</h2>
+            </div>
+            <div class="contacts-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-lang-ru="Email" data-lang-en="Email">Email</h4>
+                            <p>elenamotorina@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-lang-ru="Телефон" data-lang-en="Phone">Телефон</h4>
+                            <p>+7 (926) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-lang-ru="Адрес" data-lang-en="Address">Адрес</h4>
+                            <p data-lang-ru="Москва, Россия" data-lang-en="Moscow, Russia">Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="VK">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo" data-lang-ru="Моторина Елена" data-lang-en="Elena Motorina">Моторина Елена</div>
+                <ul class="footer-links">
+                    <li><a href="#about" data-lang-ru="Обо мне" data-lang-en="About">Обо мне</a></li>
+                    <li><a href="#works" data-lang-ru="Работы" data-lang-en="Works">Работы</a></li>
+                    <li><a href="#contacts" data-lang-ru="Контакты" data-lang-en="Contacts">Контакты</a></li>
+                </ul>
+                <div class="copyright">© 2023 <span data-lang-ru="Моторина Елена" data-lang-en="Elena Motorina">Моторина Елена</span>. Все права защищены.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation on scroll
+            const fadeElements = document.querySelectorAll('.about-content, .works-grid, .contacts-container');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Hero animation
+            setTimeout(() => {
+                document.querySelector('.hero-content').classList.add('visible');
+            }, 500);
+            
+            // Work modal
+            const modal = document.getElementById('work-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDesc = document.getElementById('modal-desc');
+            const workItems = document.querySelectorAll('.work-item');
+            
+            workItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.getAttribute('data-image');
+                    const title = document.documentElement.lang === 'en' ? this.getAttribute('data-lang-en-title') : this.getAttribute('data-title');
+                    const description = document.documentElement.lang === 'en' ? this.getAttribute('data-lang-en-description') : this.getAttribute('data-description');
+                    
+                    modalImg.src = imgSrc;
+                    modalImg.alt = title;
+                    modalTitle.textContent = title;
+                    modalDesc.textContent = description;
+                    
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            modalClose.addEventListener('click', function() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Language switcher
+            const langToggle = document.getElementById('lang-toggle');
+            const langElements = document.querySelectorAll('[data-lang-ru], [data-lang-en]');
+            
+            langToggle.addEventListener('click', function() {
+                const currentLang = document.documentElement.lang;
+                const newLang = currentLang === 'ru' ? 'en' : 'ru';
+                
+                document.documentElement.lang = newLang;
+                langToggle.textContent = newLang === 'ru' ? 'EN' : 'RU';
+                
+                langElements.forEach(el => {
+                    if (el.hasAttribute(`data-lang-${newLang}`)) {
+                        el.textContent = el.getAttribute(`data-lang-${newLang}`);
+                    }
+                });
+            });
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
 </html>
